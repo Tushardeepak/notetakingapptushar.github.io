@@ -1,0 +1,186 @@
+/* Global styles */
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  font: 1.8rem;
+  color: #360066;
+ 
+}
+
+
+/* Form styles */
+textarea{
+  border: none;
+
+}
+select{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  outline: none;
+  border: none;
+}
+.select{
+  margin-left: 2rem;
+  position: relative;
+  overflow: hidden;
+  
+
+}
+select{
+  color: #f7ab05;
+  width: 10rem;
+  cursor: pointer;
+  padding:0.8rem;
+  border: 2px solid #fff;
+  opacity: 80%;
+
+}
+.select::after{
+  content: "\25BC";
+  position: absolute;
+  background:#752d04;
+  color: black;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  padding: 1rem;
+  
+}
+.select:hover::after{
+  background:#cf4d04;
+  color: white; 
+  transition: all 1s ease;
+  opacity: 100%;
+}
+form button{
+  padding:0.5rem;
+  font-size:2.5rem;
+  border: none;
+  background:white;
+  margin-top: 0;
+}
+form button{
+  color: #d88771;
+  background:white;
+  cursor: pointer;
+  transition: all 1s ease; 
+}
+form button:hover{
+  background:#d88771;
+  color:white; 
+}
+
+/* Note Styles */
+#notes {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  background:url(g.jpg) repeat center center fixed;
+  background-size: cover;
+  font-family: 'Indie Flower', cursive;
+}
+
+.note {
+  width: 15rem;
+  color: #fff;
+  height: 10rem;
+  font-size: 1.4rem;
+  background:url(imgcard.jpg) center;
+  background-size: cover;
+  border-radius: 0.4rem;
+  padding: 1.2rem 1.6rem;
+  margin: 2.4rem 2.4rem 5rem 0;
+  box-shadow: 2px 2px 2px 2px grey;
+  
+  position: relative;
+}
+
+.note-text {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.note::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.8rem;
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.note.red::after{
+  background-color:red;
+}
+
+.note.blue::after {
+  background-color: blue;
+}
+.note.green::after {
+  background-color: green;
+}
+.note.yellow::after {
+  background-color: yellow;
+}
+
+.note span {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 0.2rem;
+  right: 0.2rem;
+  border-radius: 0.4rem;
+  color:#fff;
+  text-align: center;
+   transition: all 1s ease; 
+}
+
+.note span:hover {
+  color: #333;
+  background: #f5f5f5;
+  cursor: pointer;
+  background:#606161;
+  color:white;
+}
+#home{
+  background:url(img1.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+.landing-text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: center;
+
+}
+.landing-text h1{
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  font-size: 500%;
+  font-weight: 700%;
+}
+.landing-text h3{
+  margin-bottom: 4rem;
+  font-size: 150%;
+  font-weight: 200%;
+}
+
+form{
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img5.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-opacity:70%;
+  width: 100%;
+  height: 30%;
+  position:relative;
+}
