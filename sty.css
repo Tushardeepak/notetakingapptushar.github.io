@@ -81,6 +81,7 @@ form button:hover{
   background:url(g.jpg) repeat center center fixed;
   background-size: cover;
   font-family: 'Indie Flower', cursive;
+  margin-left: 2rem;
 }
 
 .note {
